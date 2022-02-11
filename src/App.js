@@ -1,18 +1,12 @@
-import React from 'react'
 import "./App.css";
-import ComponentA from './components/ComponentA'
-
-export const UserContext = React.createContext()
-export const NameContext = React.createContext()
+import Form from './components/Form'
 
 function App() {
-  return <div className="App">
-    <UserContext.Provider value='JOB'>
-      <NameContext.Provider value='kipchogeeeee'>
-          <ComponentA />
-      </NameContext.Provider>
-    </UserContext.Provider>
-  </div>;
-}
+
+  return (
+      <div className="App">
+        <Form />
+      </div>
+  )}
 
 export default App;
